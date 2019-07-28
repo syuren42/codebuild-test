@@ -21,7 +21,7 @@ phases:
       # - command
   pre_build:
     commands:
-      - kubetl get svc
+      - aws eks update-kubeconfig --name eks-test
       # - command
   build:
     commands:
