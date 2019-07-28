@@ -1,0 +1,6 @@
+commonLabels:
+  app: myApplication
+
+resources:
+  - nginx-deployment.yaml
+
