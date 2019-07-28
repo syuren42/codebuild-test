@@ -25,7 +25,7 @@ phases:
       # - command
   build:
     commands:
-      - kubectl get svc
+      - kubectl apply -f ./deployment/nginx-deployment.yaml
       # - command
   #post_build:
     #commands:
