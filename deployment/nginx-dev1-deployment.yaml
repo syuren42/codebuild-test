@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   labels:
-    app: nginx
+    app: nginx-dev1
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: nginx-dev1
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx-dev1
     spec:
       containers:
-      - name: nginx
+      - name: nginx-dev1
         image: nginx:1.13.5
         ports:
         - containerPort: 10080
