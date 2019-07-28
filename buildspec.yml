@@ -25,7 +25,9 @@ phases:
       # - command
   build:
     commands:
-      - kubectl apply -f ./deployment/nginx-deployment.yaml
+      - kubectl apply -f ./deployment/nginx-dev1-deployment.yaml
+      - kubectl apply -f ./deployment/nginx-dev2-deployment.yaml
+
       # - command
   #post_build:
     #commands:
